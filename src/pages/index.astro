@@ -13,31 +13,32 @@ const imageList = Object.entries(images).map(([path, module]) => ({
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
+    <head>
+        <meta charset="utf-8" />
 
-		<link rel="icon" type="image/jpeg" href="/vaporeon.jpg" />
-		<!-- https://x.com/cco00oo/status/1927151958302863772 -->
+        <link rel="icon" type="image/jpeg" href="/vaporeon.jpg" />
+        <!-- https://x.com/cco00oo/status/1927151958302863772 -->
 
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>pawjob</title>
-	</head>
-	<body class="bg-black flex items-center p-8 flex-col gap-4">
-		<h1 class="animate-rainbow font-extrabold" style="font-size: 4rem; line-height: 1.5;">pawjob.dev</h1>
-		<p class="text-3xl text-white">the gallery</p>
-		<div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 p-4 [&>*]:mb-4">
-			{imageList.map((image) => (
-				<Image
-					src={image.src}
-					alt={image.alt}
-					title={image.alt}
-					width={250}
-					class=""
-					loading="lazy"
-				/>
-			))}
-		</div>
-		<p class="text-3xl text-white">contact circular@pawjob.dev if you want to add an image</p>
-	</body>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>pawjob</title>
+    </head>
+    <body class="bg-black flex items-center p-8 flex-col gap-4">
+        <h1 class="animate-rainbow font-extrabold" style="font-size: 4rem; line-height: 1.5;">pawjob.dev</h1>
+        <p class="text-3xl text-white">the gallery</p>
+        <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 p-4 [&>*]:mb-4">
+            {imageList.map((image) => (
+                <Image
+                    src={image.src}
+                    alt={image.alt}
+                    title={image.alt}
+                    width={250}
+                    class=""
+                    loading="lazy"
+                />
+            ))}
+        </div>
+        <p class="text-3xl text-white">contact circular@pawjob.dev if you want to add an image</p>
+        <a class="text-3xl text-white" href="https://github.com/circularsprojects/pawjob.dev">this site is open source on github</a>
+    </body>
 </html>
