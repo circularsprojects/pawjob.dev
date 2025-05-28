@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import "tailwindcss";
+
+@keyframes rainbow {
+    to {
+        background-position: 200%;
+    }
+}
+
+.animate-rainbow {
+    background: repeating-linear-gradient(90deg in hsl longer hue, red 0 100%) 0/200%;
+    animation: rainbow 1s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@layer base {
+    body {
+        font-family: 'Libre Baskerville', serif;
+    }
+}
+  
