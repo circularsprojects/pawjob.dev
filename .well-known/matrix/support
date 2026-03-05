@@ -1,0 +1,10 @@
+{
+  "contacts": [
+    {
+      "email_address": "circular@circulars.dev",
+      "matrix_id": "@circular:pawjob.dev",
+      "role": "m.role.admin"
+    }
+  ],
+  "support_page": "https://circulars.dev"
+}
